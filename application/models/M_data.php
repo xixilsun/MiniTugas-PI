@@ -29,6 +29,19 @@ class M_data extends CI_Model{
                 else
                         return FALSE;
         }
+
+        public function save()
+        {
+                $data = array(
+                        "nim" => $this->input->post('input_nim'),
+                        "nama" => $this->input->post('input_nama'),
+                        "jenis_kelamin" => $this->input->post('input_jeniskelamin'),
+                        "telp" => $this->input->post('input_telp'),
+                        "alamat" => $this->input->post('input_alamat')
+                );
+                
+                $this->db->insert('mahasiswa', $data);
+        }
 }
 
 ?>
