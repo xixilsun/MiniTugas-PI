@@ -55,6 +55,12 @@ class M_data extends CI_Model{
                 $this->db->where('nim', $nim);
                 $this->db->update('mahasiswa', $data);
         }
+
+         public function delete($nim)
+        {
+                $this->db->where('nim', $nim);
+                $this->db->delete('mahasiswa');
+        }
 }
 
 ?>
