@@ -16,9 +16,16 @@
 			<th>Alamat</th>
 			<th>Aksi</th>
 		</tr>
-		<tr>
-			<td><div id = "view"></div></td>
-		</tr>
+		<?php foreach ($mahasiswa as $key): ?>
+			<tr>
+				<td><?= $key->nim ?></td>
+				<td><?= $key->nama ?></td>
+				<td><?= $key->jenis_kelamin ?></td>
+				<td><?= $key->telp ?></td>
+				<td><?= $key->alamat ?></td>
+				<td></td>
+			</tr>
+		<?php endforeach ?>
 	</table>
 </body>
 </html>
