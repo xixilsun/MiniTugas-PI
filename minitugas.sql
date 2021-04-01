@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Apr 2021 pada 14.53
+-- Waktu pembuatan: 01 Apr 2021 pada 16.28
 -- Versi server: 10.1.36-MariaDB
 -- Versi PHP: 7.1.23
 
@@ -42,16 +42,16 @@ CREATE TABLE `mahasiswa` (
 
 INSERT INTO `mahasiswa` (`nim`, `nama`, `jenis_kelamin`, `telp`, `alamat`) VALUES
 ('181402031', 'Gary Alvaro', 'Laki-laki', '+6282369573355', 'Jl. Surau, Medan Petisah, Sumatera Utara'),
-('181402052', 'Luis', 'Laki-laki', '+625521554214', 'Di Medan Sumatera Utara'),
-('181402055', 'Leonardo Wijaya', 'Laki-laki', '+625521554214', 'Stabat City in North Sumatra yang lumayan jauh dari sini'),
-('181402061', 'Endity Wasita Angkasa', 'Laki-laki', '081222222222', 'In a big big City in Indonesia, especially in Medan City with many great food and drinks'),
-('181402064', 'Xixillia', 'Perempuan', '0813333333333', 'Di rumah xixil yang ada di situ'),
-('181402081', 'Fernando', 'Laki-laki', '0822222', 'jalan rumah no 25'),
-('181402082', 'Betty', 'Perempuan', '0822222', 'jalan perisai no 9'),
-('181402083', 'Andi Law', 'Laki-laki', '0822222111', 'jalan brigjend katamso no 8e'),
-('181402084', 'Budi ', 'Laki-laki', '+62578448715', 'jalan budiman no 77E'),
+('181402052', 'Luis', 'Laki-laki', '+625521554214', 'Jalan Asia Megamas no 45'),
+('181402055', 'Leonardo Wijaya', 'Laki-laki', '+625521554214', 'Jalan Putri Hijau Komplek Putri Hijau blok 3 no 54'),
+('181402061', 'Endity Wasita Angkasa', 'Laki-laki', '081222222222', 'Jalan Sekip no 77E'),
+('181402064', 'Xixillia', 'Perempuan', '0813333333333', 'Jalan Wahidin no 33'),
+('181402081', 'Fernando', 'Laki-laki', '0895613311830', 'Jalan Merdeka no 25'),
+('181402082', 'Betty', 'Perempuan', '08126075643', 'Jalan Perisai no 9'),
+('181402083', 'Andi Law', 'Laki-laki', '082126072423', 'Jalan Brigjend Katamso no 8e'),
+('181402084', 'Budi ', 'Laki-laki', '+62578448715', 'Jalan Budiman no 77E'),
 ('181402087', 'Justin', 'Laki-laki', '+628989545142', 'Jl. Bonjornegoro No 5, Bonyowongso, Pulo Jowo Monghosodo'),
-('181402088', 'Andy Mandy', 'Laki-laki', '+625521554214', 'Ngekos di dekat pintu 4 jalan doktor mansyur\r\n');
+('181402088', 'Andy Mandy', 'Laki-laki', '+625521554214', 'Jalan Dr. Mansyur no 156c, seberang pintu 4 USU');
 
 --
 -- Indexes for dumped tables
