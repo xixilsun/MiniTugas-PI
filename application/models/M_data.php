@@ -61,6 +61,18 @@ class M_data extends CI_Model{
                 $this->db->where('nim', $nim);
                 $this->db->delete('mahasiswa');
         }
+
+         public function fetch_data($keyword)
+        {
+                $this->db->select('*');
+                $this->db->from('mahasiswa');
+                        $this->db->like('nama', $keyword);
+                        $this->db->or_like('nim', $keyword);
+                        $this->db->or_like('alamat', $keyword);
+                        $this->db->or_like('jenis_kelamin', $keyword);
+                        $this->db->or_like('telp', $keyword);         
+                return $this->db->get();
+        }
 }
 
 ?>
