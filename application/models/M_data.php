@@ -17,7 +17,7 @@ class M_data extends CI_Model{
         {
                 $this->load->library('form_validation');
                 if($mode == "save")
-                        $this->form_validation->set_rules('input_nis', 'NIS', 'required|numeric|max_length[11]');
+                        $this->form_validation->set_rules('input_nim', 'NIM', 'required|numeric|max_length[11]');
                         
                 $this->form_validation->set_rules('input_nama', 'Nama', 'required|max_length[50]');
                 $this->form_validation->set_rules('input_jeniskelamin', 'Jenis Kelamin', 'required');
