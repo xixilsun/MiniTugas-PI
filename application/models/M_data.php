@@ -6,6 +6,12 @@ class M_data extends CI_Model{
         {
                 return $this->db->get('mahasiswa')->result();
         }  
+
+        public function view_by($nim)
+        {
+                $this->db->where('nim', $nim);
+                return $this->db->get('mahasiswa')->row();
+        }
 }
 
 ?>
