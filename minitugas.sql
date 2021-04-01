@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Mar 2021 pada 15.34
+-- Waktu pembuatan: 01 Apr 2021 pada 14.53
 -- Versi server: 10.1.36-MariaDB
 -- Versi PHP: 7.1.23
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `mahasiswa` (
-  `nis` varchar(11) NOT NULL,
+  `nim` varchar(11) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `jenis_kelamin` varchar(10) NOT NULL,
   `telp` varchar(15) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE `mahasiswa` (
 -- Dumping data untuk tabel `mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`nis`, `nama`, `jenis_kelamin`, `telp`, `alamat`) VALUES
+INSERT INTO `mahasiswa` (`nim`, `nama`, `jenis_kelamin`, `telp`, `alamat`) VALUES
 ('181402031', 'Gary Alvaro', 'Laki-laki', '+6282369573355', 'Jl. Surau, Medan Petisah, Sumatera Utara'),
 ('181402052', 'Luis', 'Laki-laki', '+625521554214', 'Di Medan Sumatera Utara'),
 ('181402055', 'Leonardo Wijaya', 'Laki-laki', '+625521554214', 'Stabat City in North Sumatra yang lumayan jauh dari sini'),
@@ -61,7 +61,7 @@ INSERT INTO `mahasiswa` (`nis`, `nama`, `jenis_kelamin`, `telp`, `alamat`) VALUE
 -- Indeks untuk tabel `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  ADD PRIMARY KEY (`nis`);
+  ADD PRIMARY KEY (`nim`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
