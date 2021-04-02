@@ -12,10 +12,21 @@ class Mahasiswa extends CI_Controller {
 		 $data['mahasiswa'] = $this->M_data->view();
 		$this->load->view('index',$data);
 	}
+	
 	public function tambah()
 	{
+		if($this->input->post('submit'))
+		{
+			if($this->M_data->validation("save"))
+			{
+					$this->M_data->save();
+					redirect('mahasiswa');
+			}
+		}
 		$this->load->view('form_tambah');
 	}
+
+
 	public function ubah($nim)
 	{
 		if($this->input->post('submit'))
@@ -47,6 +58,7 @@ class Mahasiswa extends CI_Controller {
 		$data = $this->M_data->fetch_data($query);
 		if($data->num_rows() > 0)
 		{
+
 			foreach($data->result() as $data)
 			{
 				$output .= '

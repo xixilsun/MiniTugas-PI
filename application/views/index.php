@@ -17,18 +17,18 @@
 
 </head>
 
-<body>
+<body class="pb-5">
 
-<div class="container my-5 text-center ">
-        <h1 class="display-4 text-white">DATA MAHASISWA</h1>
+<div class="container my-5">
+	<h1 class="display-5 text-white">DATA MAHASISWA</h1>
 </div>
 
-<div class="container mb-2">
-        <div>
-                <div class="col-sm-9 float-left py-3">
+<div class="container">
+        <div class="row mb-4">
+                <div class="col-sm-8">
                                 <input type="text" placeholder="Cari Data Mahasiswa" id="search_text" name="search_text" class="form-control">
                 </div>
-                <div class="col-sm-3 text-right float-left py-3">
+                <div class="col-sm-4 text-right">
                         <a href='<?php echo base_url("mahasiswa/tambah"); ?>'>
                                 <button class="btn btn-dark font_Lato-Bold">
                                         <span class="glyphicon glyphicon-plus"></span> &nbsp; Tambah Data
@@ -37,8 +37,9 @@
                 </div>
         </div>
         
-        <div class="float-left" style="width: 100%">
-        <div class="table100 ver3 ">
+		<div class="js-pscroll">
+        <div class="wrap-table100">
+        	<div class="table100 ver3">
                 <div class="table100-head">
                         <table>
                                 <thead>
@@ -61,14 +62,14 @@
                                 </tbody>
                         </table>
                 </div>
-                        
+            
+        	</div>
         </div>
-        </div>
+		</div>
         
 </div>
 
-<br><br><br>
-
+<div class="my-5"></div>
 
 <!--JS-->
 <script src="<?php echo base_url('assets/tabel/vendor/jquery/jquery-3.2.1.min.js'); ?>"></script>
