@@ -81,7 +81,7 @@ class Mahasiswa extends CI_Controller {
 			}
 		}
 		else{
-			$output .= '<tr class="row100 body"><td align="center" colspan="6" class="cell100 column2">Data Tidak Ada</td></tr>' ;
+			$output .= '<tr class="row100 body"><td align="center" colspan="6" style="width: 1%">Data Tidak Ada</td></tr>' ;
 		}
 		echo $output;
 	}
