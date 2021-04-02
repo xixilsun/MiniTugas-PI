@@ -14,7 +14,20 @@ class Mahasiswa extends CI_Controller {
 	}
 	public function tambah()
 	{
-		
+		$this->load->view('form_tambah');
+	}
+	public function ubah($nim)
+	{
+		if($this->input->post('submit'))
+		{
+			if($this->M_data->validation("update"))
+			{
+				$this->M_data->edit($nim);
+				redirect('mahasiswa');
+			}
+		}
+		$data['mahasiswa'] = $this->M_data->view_by($nim);
+		$this->load->view('form_ubah', $data);
 	}
 
 	public function fetch()
