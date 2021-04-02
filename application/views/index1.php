@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/tabel/vendor/select2/select2.min.css'); ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/tabel/vendor/perfect-scrollbar/perfect-scrollbar.css'); ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/tabel/css/util.css'); ?>">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/tabel/css/main.css'); ?>">
+	    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/tabel/css/main.css'); ?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/tabel/css/glyphicons/bootstrap-glyphicons.css'); ?>">
 
 </head>
@@ -42,14 +42,14 @@
                 <div class="table100-head">
                         <table>
                                 <thead>
-                                <tr class="row100 head">
+                                    <tr class="row100 head">
                                         <th class="cell100 column2"><span class="ml-4">NIM</span></th>
                                         <th class="cell100 column2">Nama</th>
                                         <th class="cell100 column2">Jenis Kelamin</th>
                                         <th class="cell100 column2">Telepon</th>
                                         <th class="cell100 column2">Alamat</th>
                                         <th class="cell100 column2">Aksi</th>
-                                </tr>
+                                    </tr>
                                 </thead>
                         </table>
                 </div>
@@ -57,7 +57,38 @@
                 <div class="table100-body js-pscroll">
                         <table>
                                 <tbody>
-                                        <div id="view"></div>
+                                    <tr class="row100 body" style="width: 100%">
+                                        <td class="cell100 column2"><span class="ml-4">181402031</span></td>
+                                        <td class="cell100 column2">Gary</td>
+                                        <td class="cell100 column2">Laki-laki</td>
+                                        <td class="cell100 column2">081122334455</td>
+                                        <td class="cell100 column2">Kota Medan</td>
+                                        <td class="cell100 column2">X Y</td>
+                                    </tr>
+                                    <tr class="row100 body" style="width: 100%">
+                                        <td class="cell100 column2"><span class="ml-4">181402031</span></td>
+                                        <td class="cell100 column2">Gary</td>
+                                        <td class="cell100 column2">Laki-laki</td>
+                                        <td class="cell100 column2">081122334455</td>
+                                        <td class="cell100 column2">Kota Medan</td>
+                                        <td class="cell100 column2">X Y</td>
+                                    </tr>
+                                    <tr class="row100 body" style="width: 100%">
+                                        <td class="cell100 column2"><span class="ml-4">181402031</span></td>
+                                        <td class="cell100 column2">Gary</td>
+                                        <td class="cell100 column2">Laki-laki</td>
+                                        <td class="cell100 column2">081122334455</td>
+                                        <td class="cell100 column2">Kota Medan</td>
+                                        <td class="cell100 column2">X Y</td>
+                                    </tr>
+                                    <tr class="row100 body" style="width: 100%">
+                                        <td class="cell100 column2"><span class="ml-4">181402031</span></td>
+                                        <td class="cell100 column2">Gary</td>
+                                        <td class="cell100 column2">Laki-laki</td>
+                                        <td class="cell100 column2">081122334455</td>
+                                        <td class="cell100 column2">Kota Medan</td>
+                                        <td class="cell100 column2">X Y</td>
+                                    </tr>
                                 </tbody>
                         </table>
                 </div>
@@ -77,49 +108,7 @@
 <script src="<?php echo base_url('assets/tabel/vendor/select2/select2.min.js'); ?>"></script>
 <script src="<?php echo base_url('assets/tabel/vendor/perfect-scrollbar/perfect-scrollbar.min.js'); ?>"></script>
 <script src="<?php echo base_url('assets/tabel/js/main.js'); ?>"></script>
-<script>
-        $('.js-pscroll').each(function(){
-                var ps = new PerfectScrollbar(this);
-                $(window).on('resize', function(){
-                        ps.update();
-                })
-        });
-</script>
-
-<!--JS, AJAX untuk LiveSearch-->
-<script>
-$(document).ready(function(){
-        load_data();
-        
-        function load_data(query)
-        {
-                $.ajax({
-                        url : "<?php echo base_url(); ?>mahasiswa/fetch",
-                        method : "POST",
-                        data : {query:query},
-                        success : function(data)
-                        {
-                                $('#view').html(data);
-                        }
-                })
-        }
-        
-        $('#search_text').keyup(function(){
-                var search = $(this).val();
-                if(search != '')
-                {
-                        load_data(search);
-                }
-                else
-                {
-                        load_data();
-                }
-        });
-
-});
-</script>
-        
-        
+       
 
 </body>
 </html>
