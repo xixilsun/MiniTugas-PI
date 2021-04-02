@@ -29,6 +29,11 @@ class Mahasiswa extends CI_Controller {
 		$data['mahasiswa'] = $this->M_data->view_by($nim);
 		$this->load->view('form_ubah', $data);
 	}
+	public function hapus($nim)
+	{
+		$this->M_data->delete($nim);
+		redirect('mahasiswa');
+	}
 }
 
 ?>
